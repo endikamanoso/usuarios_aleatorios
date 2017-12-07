@@ -2,7 +2,7 @@
 	vertical-align: middle;
 }
 .row:nth-child(2n+1){
-	background-color: rgb(115, 129, 150);
+	background-color: rgb(173, 201, 189);
 }
 img{
 	margin-right: 15px;

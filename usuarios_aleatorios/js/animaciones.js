@@ -15,7 +15,13 @@ $(function () {
 
         //comienzo a sacar datos del array
         $(jqxhr.responseJSON.results).each(function (indice,valor) {
-            $("#contenido").append("<div class='row text-left'><img src='"+valor.picture.large+"'></img>"+valor.name.first.ucwords()+" "+valor.name.last.ucwords()+"<br>"+valor.email+"<br>"+valor.location.street.ucwords()+", "+valor.location.postcode+", "+valor.location.city.ucwords()+"("+valor.location.state.ucwords()+")</div>")
+            $("#contenido").append("<div class='row text-left'><img src='"
+                +valor.picture.large+"'></img><br>"             //foto del usuario
+                +valor.name.first.ucwords()+" "                 //Nombre
+                +valor.name.last.ucwords()+"<br>"               //Apellido
+                +valor.email+"<br>"                             //Email
+                +valor.location.street.ucwords()+", "+valor.location.postcode+", "+valor.location.city.ucwords()+"("+valor.location.state.ucwords() //Dirección
+                +")</div>")
         })
         
     })
