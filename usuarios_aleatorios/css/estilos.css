@@ -1,4 +1,10 @@
+.row{
+	vertical-align: middle;
+}
 .row:nth-child(2n+1){
-	background-color: green;
+	background-color: rgb(115, 129, 150);
+}
+img{
+	margin-right: 15px;
 }
 
